@@ -49,6 +49,10 @@ public class Deck {
     }
 
 
+
+
+
+
     // check if 5 cards, für antritt; deckLänge bestimmen; muss 5 card haebn
     // muss checken, wann deck verloren hat, deck.length null;
     // decklänge zurück geben.
@@ -57,8 +61,14 @@ public class Deck {
     }
 
 
-    public void putSingleCard(Card card) {
-        deckList.add(card);
+
+    // abgeäändert auf all ändern ---
+    public void putSingleCard(Card... cards) {
+
+        for (Card c : cards  ) {
+            deckList.add(c);
+        }
+
 
     }
 
