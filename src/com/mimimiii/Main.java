@@ -1,4 +1,4 @@
-package com.mimimiii.test;
+package com.mimimiii;
 
 public class Main {
 

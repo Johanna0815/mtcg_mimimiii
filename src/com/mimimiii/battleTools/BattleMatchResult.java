@@ -8,6 +8,7 @@ public class BattleMatchResult {
     private boolean remis;
 
 
+
     public BattleMatchResult() {
     }
 
