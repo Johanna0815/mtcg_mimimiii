@@ -5,6 +5,7 @@ public class BattleLogic {
     // nur ablauf ! -> static (ohne objekt davon )!
     public static boolean checkValidation(Deck deck) {
         if (deck.isEmpty()) {
+            System.out.println("Deck is empty. Sorry."); // !!!!!!
             return false;
         } else if (deck.decklength() != 5) {
             return false;
@@ -33,7 +34,7 @@ public class BattleLogic {
         while (counter <= 100 && !deckFirst.isEmpty() && !deckSecond.isEmpty());
 
 
- BattleMatchResult result = new BattleMatchResult();
+        BattleMatchResult result = new BattleMatchResult();
 
         if (deckFirst.isEmpty()) {
             System.out.println("DeckA has lost.");
@@ -53,10 +54,7 @@ public class BattleLogic {
 
         }
 
-return result;
-
-
-
+        return result;
 
 
     }
@@ -94,9 +92,6 @@ elemenete fehlen noch !
             return;
 
         }
-
-
-
 
 
     }
