@@ -1,7 +1,7 @@
 package com.mimimiii.battleTools.elementTypes;
 
 public class StringToEnumConverter {
-    public static ElementType getElement(String element) {
+    public static ElementType getElementType(String element) {
         switch (element.toUpperCase()) {
             case "FIRE":
                 return ElementType.FIRE;

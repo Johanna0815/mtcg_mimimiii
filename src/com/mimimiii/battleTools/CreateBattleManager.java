@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.mimimiii.battleTools.user.User;
 
 // no necesito
+/*
 public class CreateBattleManager {
 
 
@@ -60,7 +61,7 @@ public class CreateBattleManager {
     }
 
      */
-
+/*
     public String battle(User user1, User user2, Deck deck1, Deck deck2) {
         if (user1 == null || user2 == null || deck1 == null || deck2 == null) {
             this.user1 = null;
@@ -78,6 +79,8 @@ public class CreateBattleManager {
         return null;
 
 
+
+ */
 
                 /*
                 float damage1 = 30;
@@ -99,6 +102,7 @@ public class CreateBattleManager {
             }
 
                  */
+        /*
             log = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(arrayNode);
             if (deck1.isEmpty()) {
                 user1.battleLoost();
@@ -119,3 +123,7 @@ public class CreateBattleManager {
 
 
     }
+
+
+
+         */
