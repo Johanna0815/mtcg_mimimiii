@@ -34,6 +34,7 @@ public class RequestBuilder {
 
             if (request.getCrud_Method() == Crud_Method.POST || request.getCrud_Method() == Crud_Method.PUT) {
                 int asciChar;
+                // bug en NullPointerException
                 for (int i = 0; i < request.getContentLength(); i++) {
                     asciChar = in.read();
                     String body = request.getBody();

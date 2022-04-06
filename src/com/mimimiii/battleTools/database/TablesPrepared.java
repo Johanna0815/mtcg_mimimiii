@@ -1,0 +1,31 @@
+package com.mimimiii.battleTools.database;
+
+public class TablesPrepared {
+    public static String getUserListTableName() {
+        return "users";
+    }
+
+    public static String getTradeTableName() {
+        return "trades";
+    }
+
+    public static String getUserStackTableName(String username) {
+        return "stack_" + username;
+    }
+
+    public static String getCardListTableName() {
+        return "cards";
+    }
+
+    public static String getPackageTableName(String name) {
+        return "package_" + name;
+    }
+
+    public static String getPackageListTableName() {
+        return "packages";
+    }
+
+    public static String getDeckTableName(String name) {
+        return "deck_" + name;
+    }
+}

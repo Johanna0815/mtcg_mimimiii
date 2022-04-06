@@ -4,9 +4,9 @@ package com.mimimiii.battleTools.server;
 public class Response {
 
 
-    private int status;
+    private HttpStatus status;
 
-    public void setStatus(int status) {
+    public void setStatus(HttpStatus status) {
         this.status = status;
     }
 

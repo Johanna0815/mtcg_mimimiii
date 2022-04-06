@@ -25,4 +25,14 @@ public class Request {
                 ", body='" + body + '\'' +
                 '}';
     }
+
+    public Crud_Method getMethod() {
+        return crud_Method;
+    }
+
+
+    // en bug------------------TEST 1------------------------------
+    public Object getContent() {
+        return contentType;
+    }
 }

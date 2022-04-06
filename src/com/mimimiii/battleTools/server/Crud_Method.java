@@ -5,5 +5,6 @@ public enum Crud_Method {
     POST,
     GET,
     PUT,
-    DELETE
+    DELETE;
+
 }
