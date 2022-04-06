@@ -2,6 +2,8 @@ package com.mimimiii.battleTools.server;
 
 
 public class Response {
+
+
     private int status;
 
     public void setStatus(int status) {
@@ -24,12 +26,20 @@ public class Response {
     private String contentType;
     private String content;
 
+    public Response() {
+
+        message = "nur für Test hier.";
+        contentType = ContentType.HTML.type;
+        content = "nur für Test in content";
+    }
+
     public Response(HttpStatus httpStatus, ContentType contentType, String content) {
         this.status = httpStatus.code;
         this.message = httpStatus.message;
         this.contentType = contentType.type;
         this.content = content;
     }
+
 
 
     //subclass can see // sends 1:1 back |  standard response

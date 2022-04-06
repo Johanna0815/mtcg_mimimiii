@@ -1,47 +1,66 @@
 package com.mimimiii.battleTools.user;
-/*
+
+
+
 public class User {
 
-    int getId();
+
+    private String username;
+    private String password;
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public User() {
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
+// en bug ----------------------------------------------------------------------------------------------
+    // noch ausprog // boolean, return false con en
+    public Object buyPackage() {
+
+return null;
 
 
+    }
 
-    // int getToken();
-    String getToken();
+    public double getName() {
+        return 0;
+    }
 
-    String getUsername();
+    public void battleLoost() {
+    }
 
-    String getPassword();
+    public void battleWon() {
+    }
 
-    // to know if it is registered or not // to login
-    boolean authorize(String password);
-
-
-
-    // deck status too
-    String getStatus();
-
-
-
-
-
-
-
-    int getCoins();
-
-    void setCoins( int coins);
-
-
-    boolean buyPackage();
-
-    double getName();
-
-    void battleLoost();
-
-    void battleWon();
-
-    void battleDraw();
-
+    public void battleRemis() {
+    }
 }
 
- */
+

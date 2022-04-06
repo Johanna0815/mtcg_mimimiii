@@ -1,7 +1,5 @@
 package com.mimimiii.battleTools.server;
 
-import com.mimimiii.application.MTCG;
-
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -32,7 +30,7 @@ public class Server {
                 return;
             }
             System.out.println("Start http-server...");
-            this.serverSocket = new ServerSocket(this.port);
+          //   this.serverSocket = new ServerSocket(this.port);
             System.out.println("http-server running at: http://localhost:" + this.port);
 
             this.run();

@@ -9,12 +9,11 @@ public class Deck {
 
     private LinkedList<Card> deckList;
 
-
     //...methode nachschauen!// ... sagt ein oder mehrere  // erstellt ein Array, gleiche datentyp nötig !
     public Deck(String owner, Card... cards) {
 
         this.owner = owner;
-        this.deckList = new LinkedList<Card>();
+        this.deckList = new LinkedList<Card>(); // arrrayList tal vez mejor
         // this.Cards = cards;
 
         for (Card c : cards) {
@@ -49,10 +48,6 @@ public class Deck {
     }
 
 
-
-
-
-
     // check if 5 cards, für antritt; deckLänge bestimmen; muss 5 card haebn
     // muss checken, wann deck verloren hat, deck.length null;
     // decklänge zurück geben.
@@ -61,11 +56,10 @@ public class Deck {
     }
 
 
-
     // abgeäändert auf all ändern ---
     public void putSingleCard(Card... cards) {
 
-        for (Card c : cards  ) {
+        for (Card c : cards) {
             deckList.add(c);
         }
 
@@ -73,12 +67,28 @@ public class Deck {
     }
 
 
-
-
-
-
     public boolean isEmpty() {
         return deckList.isEmpty();
+    }
+
+
+//double
+
+
+    public float getRandomCard() {
+//
+        float implizitesCast = (float) (Math.random() * 8); // kartenanzahl anpassen !
+        System.out.println(implizitesCast);
+
+        return implizitesCast;
+    }
+
+
+    public double getSize() {
+        return 0;
+    }
+
+    public void removeCard(Card card2) {
     }
 
 

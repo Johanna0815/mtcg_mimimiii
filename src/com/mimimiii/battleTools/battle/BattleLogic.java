@@ -1,4 +1,8 @@
-package com.mimimiii.battleTools;
+package com.mimimiii.battleTools.battle;
+
+import com.mimimiii.battleTools.Card;
+import com.mimimiii.battleTools.Deck;
+import com.mimimiii.battleTools.battle.BattleMatchResult;
 
 public class BattleLogic {
 

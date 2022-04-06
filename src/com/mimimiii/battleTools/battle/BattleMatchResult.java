@@ -1,4 +1,4 @@
-package com.mimimiii.battleTools;
+package com.mimimiii.battleTools.battle;
 
 public class BattleMatchResult {
 
@@ -11,7 +11,7 @@ public class BattleMatchResult {
 
     public BattleMatchResult() {
     }
-
+// bug incluír -----------------------------------------------------------------
     public BattleMatchResult(String winner, String looser, boolean remis) {
         this.winner = winner;
         this.looser = looser;

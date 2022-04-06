@@ -6,8 +6,6 @@ import java.sql.SQLException;
 
 public class DatabaseService {
 
-/*
-
 
     // mtcg_mimimiii
     private static final String DB_URL = "jdbc:postgresql://localhost:5432/postgres";
@@ -41,5 +39,3 @@ public class DatabaseService {
 }
 
 
- */
-}

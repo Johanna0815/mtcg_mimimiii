@@ -27,19 +27,26 @@ public class RequestHandler implements Runnable {
     @Override
     public void run() {
         try {
-            Response response;
             Request request = RequestBuilder.buildRequest(this.in);
 
+            Response response = app.handleRequest(request);
+
+           /*
             if (request.getPathname() == null) {
                 response = new Response(
                         HttpStatus.BAD_REQUEST,
                         ContentType.JSON,
                         "[]"
                 );
+
             } else {
                 response = this.app.handleRequest(request); // METHODE WO MEINE antwort gibt.// bastelt. entscheided was aufrufen, was ...
             }
+
+            */
             output.write(response.get());
+
+
         } catch (IOException exc) {
             System.err.println(Thread.currentThread().getName() + " Error: " + exc.getMessage());
         } finally {

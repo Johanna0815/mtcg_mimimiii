@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 
+//ausgelagert in BattleMatchResult ----------- insensato
+
 @AllArgsConstructor
 public class Battle {
 /*
