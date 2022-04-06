@@ -13,5 +13,18 @@ public class TokenRelatedTest {
     void getUserToken() {
         String token = "TestPersona-mtcgToken";
         assertEquals(0,token.compareTo(TokenRelated.getUserToken("TestPersona")));
+
+
     }
+
+
+
+    @Test
+    void getAdminToken() {
+        String token = "TestPersona-mtcgToken";
+        assertEquals(0,token.compareTo(TokenRelated.getUserToken("TestPersona")));
+
+    }
+
+
 }

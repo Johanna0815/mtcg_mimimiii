@@ -1,4 +1,4 @@
-package com.mimimiii.battleTools;
+package com.mimimiii.battleTools.battle;
 
 import com.mimimiii.battleTools.elementTypes.CardType;
 import com.mimimiii.battleTools.elementTypes.ElementType;
@@ -6,9 +6,6 @@ import com.mimimiii.battleTools.elementTypes.ElementType;
 public class Card {
 
     private String name;
-
-
-
     private float damage;
 
     private ElementType element;
@@ -16,6 +13,10 @@ public class Card {
     private String id;
     private CardType cardType;
 
+
+    public Card () {
+
+    }
 
     public Card(String name, float damage, ElementType element) {
         this.name = name;
@@ -70,9 +71,6 @@ public class Card {
     public void setElement(ElementType element) {
         this.element = element;
     }
-
-
-
 
 
 

@@ -10,10 +10,7 @@ import lombok.Setter;
 
 @AllArgsConstructor
 public class Battle {
-/*
-    @Getter
-    String matched = "thihi";
-*/
+
 
     @Getter
     @Setter

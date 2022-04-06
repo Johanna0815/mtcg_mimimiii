@@ -5,6 +5,10 @@ public class ScoreRelated {
     private String username;
     private int elo;
 
+    public ScoreRelated(String username, int elo) {
+        this.username = username;
+        this.elo = elo;
+    }
 
     public String getUsername() {
         return username;

@@ -1,9 +1,13 @@
-package com.mimimiii.battleTools;
+package com.mimimiii.battleTools.battle;
+
+import com.fasterxml.jackson.core.TreeNode;
+import com.mimimiii.battleTools.battle.Card;
 
 import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
 public class Deck {
+    // private static final String OWNER = ;
     //meine konstante:
     private String owner;
 
@@ -24,6 +28,12 @@ public class Deck {
     public String getOwner() {
         return owner;
     }
+
+
+
+
+
+
 
     public void setOwner(String owner) {
         this.owner = owner;
@@ -91,5 +101,31 @@ public class Deck {
     public void removeCard(Card card2) {
     }
 
+    @Override
+    public String toString() {
+        return "Deck{" +
+                "owner='" + owner + '\'' +
+                ", deckList=" + deckList +
+                '}';
+    }
 
+
+
+
+
+
+    public void addID(Card id) {
+        Card.deckList.add(id);
+    }
+    public LinkedList<String> getList() {
+        return decklist;
+    }
+    public void addID(String id) {
+        deckList.add(id);
+    }
+
+
+    public TreeNode deckList() {
+        return decklist;
+    }
 }

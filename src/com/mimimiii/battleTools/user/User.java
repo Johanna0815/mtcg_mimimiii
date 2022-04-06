@@ -49,9 +49,11 @@ return null;
 
     }
 
-    public double getName() {
+ /*  public double getName() {
         return 0;
     }
+
+  */
 
     public void battleLoost() {
     }

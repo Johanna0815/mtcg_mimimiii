@@ -9,12 +9,23 @@ public enum HttpStatus {
     INTERNAL_SERVER_ERROR(500, "Internal Server Error"),
     SQL_ERROR(900,"SQL-Error");
 
-    public final HttpStatus code;
-    public final String message;
 
-    HttpStatus(HttpStatus code, String message) {
+// bug ---  int ^ -- no more final
+    public  HttpStatus code;
+    public  String message;
+
+    public final int invalid;
+    public final String ok;
+    
+    HttpStatus(HttpStatus code, String message, String ok) {
         this.code = code;
         this.message = message;
+        this.ok = ok;
+        invalid = 0;
     }
 
+    HttpStatus(int invalid, String ok) {
+        this.invalid = invalid;
+        this.ok = ok;
+    }
 }

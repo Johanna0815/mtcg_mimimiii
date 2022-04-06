@@ -3,8 +3,25 @@ package com.mimimiii.battleTools.server;
 
 public class Response {
 
-
+    private String message;
+    private String contentType;
+    private String content;
     private HttpStatus status;
+
+
+    public Response() {
+        setStatus(HttpStatus.OK);
+        contentType = ContentType.HTML.type;
+        content = "it works. [Response.]";
+    }
+
+
+    public Response(HttpStatus httpStatus, ContentType contentType, String content) {
+        this.status = httpStatus.code;
+        this.message = httpStatus.message;
+        this.contentType = contentType.type;
+        this.content = content;
+    }
 
     public void setStatus(HttpStatus status) {
         this.status = status;
@@ -14,33 +31,34 @@ public class Response {
         this.message = message;
     }
 
-    public void setContentType(String contentType) {
-        this.contentType = contentType;
+    public void setContentType(ContentType contentType) {
+        this.contentType = contentType.type;
     }
 
     public void setContent(String content) {
         this.content = content;
     }
 
-    private String message;
-    private String contentType;
-    private String content;
 
+/*
     public Response() {
 
-        message = "nur für Test hier.";
+       // message = "nur für Test hier.";
         contentType = ContentType.HTML.type;
         content = "nur für Test in content";
     }
 
-    public Response(HttpStatus httpStatus, ContentType contentType, String content) {
-        this.status = httpStatus.code;
-        this.message = httpStatus.message;
-        this.contentType = contentType.type;
-        this.content = content;
+ */
+
+    @Override
+    public String toString() {
+        return "Response{" +
+                "message='" + message + '\'' +
+                ", contentType='" + contentType + '\'' +
+                ", content='" + content + '\'' +
+                ", status=" + status +
+                '}';
     }
-
-
 
     //subclass can see // sends 1:1 back |  standard response
     protected String get() {

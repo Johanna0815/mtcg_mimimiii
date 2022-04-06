@@ -1,4 +1,4 @@
-package com.mimimiii.battleTools;
+package com.mimimiii.battleTools.battle;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
